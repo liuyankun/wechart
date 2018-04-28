@@ -1,0 +1,767 @@
+2018-04-27 11:06:52,362  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-04-27 11:06:52,532  INFO WechartApplication:50 - Starting WechartApplication on sdt-20363 with PID 5620 (D:\IdeaProject\wechart\target\classes started by 20363 in D:\IdeaProject\wechart)
+2018-04-27 11:06:52,532  INFO WechartApplication:659 - No active profile set, falling back to default profiles: default
+2018-04-27 11:06:52,564  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@466276d8: startup date [Fri Apr 27 11:06:52 CST 2018]; root of context hierarchy
+2018-04-27 11:06:53,178  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:06:53,193  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:06:53,224  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:06:53,224  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:06:53,240  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:06:53,240  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:06:53,240  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:06:53,624  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$273c680d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-27 11:06:53,890  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-27 11:06:54,014  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1450 ms
+2018-04-27 11:06:54,143  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-27 11:06:54,143  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-27 11:06:54,143  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-27 11:06:54,143  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-27 11:06:54,143  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-27 11:06:54,237  INFO VersionPrinter:44 - Flyway Community Edition 5.0.7 by Boxfuse
+2018-04-27 11:06:54,237  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-04-27 11:06:54,362  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-04-27 11:06:54,362  INFO DatabaseFactory:44 - Database: jdbc:mysql://192.168.1.80:3306/wechart (MySQL 5.6)
+2018-04-27 11:06:54,408  INFO DbValidate:44 - Successfully validated 1 migration (execution time 00:00.017s)
+2018-04-27 11:06:54,424  INFO DbMigrate:44 - Current version of schema `wechart`: 1
+2018-04-27 11:06:54,424  INFO DbMigrate:44 - Schema `wechart` is up to date. No migration necessary.
+2018-04-27 11:06:54,547  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:06:54,547  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-27 11:06:54,610  INFO Version:45 - HHH000412: Hibernate Core {5.2.16.Final}
+2018-04-27 11:06:54,610  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-04-27 11:06:54,641  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-27 11:06:54,750  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-27 11:06:55,222  INFO LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:06:55,546  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-27 11:06:55,968  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-27 11:06:56,347  INFO cluster:71 - Cluster created with settings {hosts=[192.168.1.80:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-04-27 11:06:56,487  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:9}] to 192.168.1.80:27017
+2018-04-27 11:06:56,503  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.80:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 4]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21628274}
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/hello]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index()
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.lyk.wechart.domain.User> com.lyk.wechart.web.UserController.getUserList()
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[POST]}" onto public java.lang.String com.lyk.wechart.web.UserController.postUser(com.lyk.wechart.domain.User)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.lyk.wechart.domain.User com.lyk.wechart.web.UserController.getUser(java.lang.Long)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.lyk.wechart.web.UserController.putUser(java.lang.Long,com.lyk.wechart.domain.User)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.lyk.wechart.web.UserController.deleteUser(java.lang.Long)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-27 11:06:56,562  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-27 11:06:56,578  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-27 11:06:56,578  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-27 11:06:56,578  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-27 11:06:56,687  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:06:56,874  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@466276d8: startup date [Fri Apr 27 11:06:52 CST 2018]; root of context hierarchy
+2018-04-27 11:06:56,921  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:06:56,921  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:06:56,921  INFO ExceptionHandlerExceptionResolver:288 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-27 11:06:57,000  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-04-27 11:06:57,410  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-04-27 11:06:57,410  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-27 11:06:57,410  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-27 11:06:57,425  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-27 11:06:57,441  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-27 11:06:57,441  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-27 11:06:57,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:06:57,441  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:06:57,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:06:57,441  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:06:57,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:06:57,441  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:06:57,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:06:57,441  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:06:57,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:06:57,457  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:06:57,457  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-04-27 11:06:57,472  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,472  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:06:57,472  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,472  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:06:57,472  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,472  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,488  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:06:57,488  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:06:57,503  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,503  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,503  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,503  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,519  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,519  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:06:57,519  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:06:57,519  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,519  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:06:57,519  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,535  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:06:57,535  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,535  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,536  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:06:57,537  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:06:57,539  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,539  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:06:57,539  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,539  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:06:57,540  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,540  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,540  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,540  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,541  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,542  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,542  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,542  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,543  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,543  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,545  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:06:57,546  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:06:57,547  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,547  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:06:57,547  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:06:57,547  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:06:57,547  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,547  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,547  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,547  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:06:57,547  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,547  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:06:57,547  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:06:57,547  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:06:57,593  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-27 11:06:57,593  INFO WechartApplication:59 - Started WechartApplication in 5.515 seconds (JVM running for 6.337)
+2018-04-27 11:07:44,273  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-27 11:07:44,290  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-04-27 11:09:30,269  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-04-27 11:09:30,410  INFO WechartApplication:50 - Starting WechartApplication on sdt-20363 with PID 6256 (D:\IdeaProject\wechart\target\classes started by 20363 in D:\IdeaProject\wechart)
+2018-04-27 11:09:30,410  INFO WechartApplication:659 - No active profile set, falling back to default profiles: default
+2018-04-27 11:09:30,472  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42039326: startup date [Fri Apr 27 11:09:30 CST 2018]; root of context hierarchy
+2018-04-27 11:09:31,129  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:31,160  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:09:31,175  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:31,191  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:09:31,191  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:31,207  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:09:31,207  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:09:31,568  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: @org.aspectj.lang.annotation.AfterReturning(pointcut="", value="", argNames="", returning="ret") cannot be an AspectJ annotation
+2018-04-27 11:09:31,568  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-04-27 11:09:31,599 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: @org.aspectj.lang.annotation.AfterReturning(pointcut="", value="", argNames="", returning="ret") cannot be an AspectJ annotation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:496)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:238)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:710)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.lyk.wechart.WechartApplication.main(WechartApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: @org.aspectj.lang.annotation.AfterReturning(pointcut="", value="", argNames="", returning="ret") cannot be an AspectJ annotation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:496)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:94)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:254)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1063)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1036)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:490)
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: @org.aspectj.lang.annotation.AfterReturning(pointcut="", value="", argNames="", returning="ret") cannot be an AspectJ annotation
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory$AspectJAnnotation.<init>(AbstractAspectJAdvisorFactory.java:202)
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.findAnnotation(AbstractAspectJAdvisorFactory.java:146)
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.findAspectJAnnotationOnMethod(AbstractAspectJAdvisorFactory.java:134)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.lambda$static$0(ReflectiveAspectJAdvisorFactory.java:80)
+	at org.springframework.core.convert.converter.ConvertingComparator.compare(ConvertingComparator.java:79)
+	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1440)
+	at java.base/java.util.List.sort(List.java:506)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisorMethods(ReflectiveAspectJAdvisorFactory.java:157)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:125)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:254)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1063)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1036)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:490)
+	... 35 more
+Caused by: java.lang.IllegalStateException: Failed to resolve expression: @org.aspectj.lang.annotation.AfterReturning(pointcut="", value="", argNames="", returning="ret")
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory$AspectJAnnotation.resolveExpression(AbstractAspectJAdvisorFactory.java:231)
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory$AspectJAnnotation.<init>(AbstractAspectJAdvisorFactory.java:198)
+	... 53 more
+2018-04-27 11:09:58,298  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-04-27 11:09:58,469  INFO WechartApplication:50 - Starting WechartApplication on sdt-20363 with PID 2472 (D:\IdeaProject\wechart\target\classes started by 20363 in D:\IdeaProject\wechart)
+2018-04-27 11:09:58,469  INFO WechartApplication:659 - No active profile set, falling back to default profiles: default
+2018-04-27 11:09:58,516  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33fe57a9: startup date [Fri Apr 27 11:09:58 CST 2018]; root of context hierarchy
+2018-04-27 11:09:59,223  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:59,254  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:09:59,286  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:59,286  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:09:59,301  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:09:59,301  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:09:59,301  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:09:59,720  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30b22ef8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-27 11:10:00,081  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-27 11:10:00,190  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1674 ms
+2018-04-27 11:10:00,315  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-27 11:10:00,315  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-27 11:10:00,315  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-27 11:10:00,315  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-27 11:10:00,315  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-27 11:10:00,424  INFO VersionPrinter:44 - Flyway Community Edition 5.0.7 by Boxfuse
+2018-04-27 11:10:00,424  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-04-27 11:10:00,556  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-04-27 11:10:00,556  INFO DatabaseFactory:44 - Database: jdbc:mysql://192.168.1.80:3306/wechart (MySQL 5.6)
+2018-04-27 11:10:00,603  INFO DbValidate:44 - Successfully validated 1 migration (execution time 00:00.019s)
+2018-04-27 11:10:00,618  INFO DbMigrate:44 - Current version of schema `wechart`: 1
+2018-04-27 11:10:00,618  INFO DbMigrate:44 - Schema `wechart` is up to date. No migration necessary.
+2018-04-27 11:10:00,743  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:10:00,743  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-27 11:10:00,790  INFO Version:45 - HHH000412: Hibernate Core {5.2.16.Final}
+2018-04-27 11:10:00,790  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-04-27 11:10:00,821  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-27 11:10:00,884  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-27 11:10:01,173  INFO LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:10:01,501  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-27 11:10:01,893  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-27 11:10:02,064  INFO cluster:71 - Cluster created with settings {hosts=[192.168.1.80:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-04-27 11:10:02,115  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:10}] to 192.168.1.80:27017
+2018-04-27 11:10:02,146  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.80:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 4]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12303607}
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/hello]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index()
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.lyk.wechart.domain.User> com.lyk.wechart.web.UserController.getUserList()
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[POST]}" onto public java.lang.String com.lyk.wechart.web.UserController.postUser(com.lyk.wechart.domain.User)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.lyk.wechart.domain.User com.lyk.wechart.web.UserController.getUser(java.lang.Long)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.lyk.wechart.web.UserController.putUser(java.lang.Long,com.lyk.wechart.domain.User)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.lyk.wechart.web.UserController.deleteUser(java.lang.Long)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-27 11:10:02,318  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-27 11:10:02,333  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-27 11:10:02,333  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-27 11:10:02,489  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:10:02,705  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33fe57a9: startup date [Fri Apr 27 11:09:58 CST 2018]; root of context hierarchy
+2018-04-27 11:10:02,752  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:10:02,752  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:10:02,767  INFO ExceptionHandlerExceptionResolver:288 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-27 11:10:02,845  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-04-27 11:10:03,344  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-04-27 11:10:03,344  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-27 11:10:03,344  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-27 11:10:03,360  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-27 11:10:03,376  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-27 11:10:03,376  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:10:03,376  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:10:03,376  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:10:03,376  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:10:03,376  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:10:03,376  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:10:03,391  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-04-27 11:10:03,391  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,391  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:10:03,407  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,407  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:10:03,407  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,407  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,422  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:10:03,422  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:10:03,422  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,422  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,438  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,438  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:10:03,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:10:03,454  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:10:03,454  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:10:03,454  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,454  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:10:03,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,469  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:10:03,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:10:03,469  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,469  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:10:03,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:10:03,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:10:03,500  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-27 11:10:03,500  INFO WechartApplication:59 - Started WechartApplication in 5.374 seconds (JVM running for 6.101)
+2018-04-27 11:10:15,604  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-27 11:10:15,624  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-04-27 11:10:18,045  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:10:18,045  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:10:18,046  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:10:18,047  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:10:18,048  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:10:18,140  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@214805ba, com.lyk.wechart.domain.User@9dbc356, com.lyk.wechart.domain.User@30d51711, com.lyk.wechart.domain.User@2fb6d26f, com.lyk.wechart.domain.User@477d32cf, com.lyk.wechart.domain.User@10eb8805]
+2018-04-27 11:17:33,630  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:17:33,633  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:17:33,634  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:17:33,634  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:17:33,635  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:17:33,645  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@7d43d8e3, com.lyk.wechart.domain.User@1e8153bd, com.lyk.wechart.domain.User@4bc1e705, com.lyk.wechart.domain.User@4c4a372d, com.lyk.wechart.domain.User@2f2d7a87, com.lyk.wechart.domain.User@3ba5c864]
+2018-04-27 11:18:02,580  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:18:02,581  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:18:02,582  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:18:02,582  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:18:02,583  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:18:05,580  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@2c3b5ef0, com.lyk.wechart.domain.User@2d23165, com.lyk.wechart.domain.User@7ca63522, com.lyk.wechart.domain.User@a9c2898, com.lyk.wechart.domain.User@19d679b7, com.lyk.wechart.domain.User@798da673]
+2018-04-27 11:18:56,749  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:18:56,750  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:18:56,751  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:18:56,752  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:18:56,752  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:18:57,509  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@7d146e96, com.lyk.wechart.domain.User@18282690, com.lyk.wechart.domain.User@417d3e70, com.lyk.wechart.domain.User@56ac7303, com.lyk.wechart.domain.User@812d79e, com.lyk.wechart.domain.User@51576caa]
+2018-04-27 11:19:37,800  WARN HikariPool:756 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s139ms90µs778ns).
+2018-04-27 11:19:55,532  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:19:55,533  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:19:55,534  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:19:55,534  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:19:55,535  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:19:56,100  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@3e27137f, com.lyk.wechart.domain.User@440bfa63, com.lyk.wechart.domain.User@22009add, com.lyk.wechart.domain.User@331c2ddd, com.lyk.wechart.domain.User@35267c2a, com.lyk.wechart.domain.User@2e65500f]
+2018-04-27 11:20:17,637  WARN HikariPool:756 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s910ms979µs862ns).
+2018-04-27 11:48:07,630  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-04-27 11:48:07,864  INFO WechartApplication:50 - Starting WechartApplication on sdt-20363 with PID 6940 (D:\IdeaProject\wechart\target\classes started by 20363 in D:\IdeaProject\wechart)
+2018-04-27 11:48:07,864  INFO WechartApplication:659 - No active profile set, falling back to default profiles: default
+2018-04-27 11:48:07,927  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@673be18f: startup date [Fri Apr 27 11:48:07 CST 2018]; root of context hierarchy
+2018-04-27 11:48:08,650  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:48:08,665  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:48:08,697  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:48:08,697  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:48:08,712  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 11:48:08,712  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 11:48:08,712  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 11:48:09,137  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dd6492d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-27 11:48:09,449  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-27 11:48:09,576  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1649 ms
+2018-04-27 11:48:09,701  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-27 11:48:09,701  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-27 11:48:09,701  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-27 11:48:09,701  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-27 11:48:09,701  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-27 11:48:09,810  INFO VersionPrinter:44 - Flyway Community Edition 5.0.7 by Boxfuse
+2018-04-27 11:48:09,810  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-04-27 11:48:09,935  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-04-27 11:48:09,935  INFO DatabaseFactory:44 - Database: jdbc:mysql://192.168.1.80:3306/wechart (MySQL 5.6)
+2018-04-27 11:48:09,982  INFO DbValidate:44 - Successfully validated 1 migration (execution time 00:00.021s)
+2018-04-27 11:48:10,013  INFO DbMigrate:44 - Current version of schema `wechart`: 1
+2018-04-27 11:48:10,014  INFO DbMigrate:44 - Schema `wechart` is up to date. No migration necessary.
+2018-04-27 11:48:10,119  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:48:10,119  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-27 11:48:10,181  INFO Version:45 - HHH000412: Hibernate Core {5.2.16.Final}
+2018-04-27 11:48:10,181  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-04-27 11:48:10,212  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-27 11:48:10,290  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-27 11:48:10,572  INFO LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-27 11:48:10,916  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-27 11:48:11,313  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-27 11:48:11,587  INFO cluster:71 - Cluster created with settings {hosts=[192.168.1.80:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-04-27 11:48:11,619  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:11}] to 192.168.1.80:27017
+2018-04-27 11:48:11,634  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.80:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 4]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2831694}
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/hello]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index()
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.lyk.wechart.web.UserController.putUser(java.lang.Long,com.lyk.wechart.domain.User)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.lyk.wechart.web.UserController.deleteUser(java.lang.Long)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.lyk.wechart.domain.User> com.lyk.wechart.web.UserController.getUserList()
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[POST]}" onto public java.lang.String com.lyk.wechart.web.UserController.postUser(com.lyk.wechart.domain.User)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.lyk.wechart.domain.User com.lyk.wechart.web.UserController.getUser(java.lang.Long)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-27 11:48:11,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-27 11:48:11,993  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:48:12,232  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@673be18f: startup date [Fri Apr 27 11:48:07 CST 2018]; root of context hierarchy
+2018-04-27 11:48:12,279  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:48:12,279  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 11:48:12,294  INFO ExceptionHandlerExceptionResolver:288 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-27 11:48:12,372  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-04-27 11:48:12,842  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-04-27 11:48:12,842  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-27 11:48:12,842  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-27 11:48:12,858  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-27 11:48:12,858  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-27 11:48:12,874  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:48:12,874  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:48:12,874  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:48:12,874  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:48:12,874  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 11:48:12,874  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-04-27 11:48:12,889  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,889  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:48:12,905  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,905  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:48:12,905  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,905  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,905  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:48:12,920  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 11:48:12,920  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,920  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,920  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,920  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,952  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:48:12,952  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 11:48:12,952  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 11:48:12,952  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,952  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:48:12,952  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:48:12,952  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,952  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,952  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,952  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,967  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,967  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:48:12,967  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 11:48:12,967  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,967  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 11:48:12,967  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 11:48:12,967  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 11:48:12,967  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 11:48:12,967  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,967  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 11:48:12,967  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:48:12,967  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 11:48:12,998  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-27 11:48:12,998  INFO WechartApplication:59 - Started WechartApplication in 5.489 seconds (JVM running for 6.246)
+2018-04-27 11:48:25,313  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-27 11:48:25,332  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-04-27 11:48:30,484  INFO WebLogAspect:32 - URL : http://localhost:8080/users
+2018-04-27 11:48:30,485  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-27 11:48:30,486  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-27 11:48:30,487  INFO WebLogAspect:35 - CLASS_METHOD : com.lyk.wechart.web.UserController.getUserList
+2018-04-27 11:48:30,488  INFO WebLogAspect:36 - ARGS : []
+2018-04-27 11:48:31,203  INFO WebLogAspect:43 - RESPONSE : [com.lyk.wechart.domain.User@377bb588, com.lyk.wechart.domain.User@7c30235f, com.lyk.wechart.domain.User@67e291c2, com.lyk.wechart.domain.User@624494e7, com.lyk.wechart.domain.User@22f776b1, com.lyk.wechart.domain.User@5f20936b]
+2018-04-27 14:46:34,500  WARN HikariPool:756 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m23s325ms522µs197ns).
+2018-04-27 14:46:34,515  INFO cluster:76 - Exception in monitor thread while connecting to server 192.168.1.80:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:62)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.PlainSocketImpl.connect(PlainSocketImpl.java:148)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:59)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:57)
+	... 3 more
+2018-04-27 14:46:44,528  INFO connection:71 - Opened connection [connectionId{localValue:3, serverValue:12}] to 192.168.1.80:27017
+2018-04-27 14:46:44,528  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.80:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 4]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=557549}
+2018-04-27 16:34:29,114  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-04-27 16:34:29,215  INFO WechartApplication:50 - Starting WechartApplication on sdt-20363 with PID 3444 (D:\IdeaProject\wechart\target\classes started by 20363 in D:\IdeaProject\wechart)
+2018-04-27 16:34:29,215  INFO WechartApplication:659 - No active profile set, falling back to default profiles: default
+2018-04-27 16:34:29,261  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40db2a24: startup date [Fri Apr 27 16:34:29 CST 2018]; root of context hierarchy
+2018-04-27 16:34:29,957  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 16:34:29,986  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 16:34:30,009  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 16:34:30,019  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 16:34:30,027  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-04-27 16:34:30,033  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.PaperRepository.
+2018-04-27 16:34:30,033  INFO RepositoryConfigurationExtensionSupport:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lyk.wechart.domain.UserRepository.
+2018-04-27 16:34:30,415  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f3c41a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-27 16:34:30,791  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-04-27 16:34:31,066  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1805 ms
+2018-04-27 16:34:31,210  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-27 16:34:31,210  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-27 16:34:31,210  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-27 16:34:31,210  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-27 16:34:31,210  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-27 16:34:31,323  INFO VersionPrinter:44 - Flyway Community Edition 5.0.7 by Boxfuse
+2018-04-27 16:34:31,323  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-04-27 16:34:31,450  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-04-27 16:34:31,450  INFO DatabaseFactory:44 - Database: jdbc:mysql://192.168.1.80:3306/wechart (MySQL 5.6)
+2018-04-27 16:34:31,497  INFO DbValidate:44 - Successfully validated 1 migration (execution time 00:00.017s)
+2018-04-27 16:34:31,516  INFO DbMigrate:44 - Current version of schema `wechart`: 1
+2018-04-27 16:34:31,516  INFO DbMigrate:44 - Schema `wechart` is up to date. No migration necessary.
+2018-04-27 16:34:31,648  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-27 16:34:31,663  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-27 16:34:31,710  INFO Version:45 - HHH000412: Hibernate Core {5.2.16.Final}
+2018-04-27 16:34:31,710  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-04-27 16:34:31,740  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-27 16:34:31,799  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-27 16:34:32,134  INFO LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-27 16:34:32,463  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-27 16:34:32,853  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-27 16:34:33,061  INFO cluster:71 - Cluster created with settings {hosts=[192.168.1.80:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-04-27 16:34:33,108  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:13}] to 192.168.1.80:27017
+2018-04-27 16:34:33,123  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.80:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 4]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3132282}
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/hello]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index()
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/]}" onto public java.lang.String com.lyk.wechart.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.lyk.wechart.domain.User> com.lyk.wechart.web.UserController.getUserList()
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users],methods=[POST]}" onto public java.lang.String com.lyk.wechart.web.UserController.postUser(com.lyk.wechart.domain.User)
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.lyk.wechart.domain.User com.lyk.wechart.web.UserController.getUser(java.lang.Long)
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.lyk.wechart.web.UserController.putUser(java.lang.Long,com.lyk.wechart.domain.User)
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.lyk.wechart.web.UserController.deleteUser(java.lang.Long)
+2018-04-27 16:34:33,307  INFO RequestMappingHandlerMapping:547 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-27 16:34:33,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-27 16:34:33,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-27 16:34:33,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-27 16:34:33,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-27 16:34:33,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-27 16:34:33,465  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 16:34:33,663  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40db2a24: startup date [Fri Apr 27 16:34:29 CST 2018]; root of context hierarchy
+2018-04-27 16:34:33,728  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 16:34:33,728  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-27 16:34:33,743  INFO ExceptionHandlerExceptionResolver:288 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-27 16:34:33,823  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-04-27 16:34:34,330  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-04-27 16:34:34,330  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-27 16:34:34,330  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-27 16:34:34,349  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-27 16:34:34,359  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-27 16:34:34,366  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-27 16:34:34,369  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 16:34:34,370  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 16:34:34,371  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 16:34:34,371  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 16:34:34,372  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 16:34:34,372  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 16:34:34,372  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 16:34:34,372  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 16:34:34,373  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 16:34:34,373  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.lyk.wechart.web.UserController}]] 
+2018-04-27 16:34:34,375  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-04-27 16:34:34,384  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,384  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 16:34:34,384  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,384  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 16:34:34,384  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,384  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,399  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 16:34:34,415  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2018-04-27 16:34:34,415  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,415  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,415  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,415  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,430  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,430  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,430  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,430  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,430  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,430  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,446  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.lyk.wechart.domain.User>(true)
+2018-04-27 16:34:34,446  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(true)
+2018-04-27 16:34:34,446  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,446  INFO OperationsKeyGenerator:51 - Cache key generated: /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,446  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users.com.lyk.wechart.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 16:34:34,446  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2018-04-27 16:34:34,462  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,462  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-27 16:34:34,462  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-27 16:34:34,462  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-27 16:34:34,462  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,462  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,462  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,462  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.lyk.wechart.domain.User(false)
+2018-04-27 16:34:34,462  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,462  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.lyk.wechart.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-04-27 16:34:34,462  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 16:34:34,462  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2018-04-27 16:34:34,498  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-27 16:34:34,500  INFO WechartApplication:59 - Started WechartApplication in 5.534 seconds (JVM running for 6.656)
+2018-04-27 16:35:17,248  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-27 16:35:17,264  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-04-27 16:35:17,573 ERROR TemplateEngine:1136 - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 6)
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 6)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:472)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'message' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 46 more
